@@ -1,108 +1,54 @@
-@-moz-viewport { width: device-width; scale: 1; }
-@-ms-viewport { width: device-width; scale: 1; }
-@-o-viewport { width: device-width; scale: 1; }
-@-webkit-viewport { width: device-width; scale: 1; }
-@viewport { width: device-width; scale: 1; }
-
 html {
- box-sizing: border-box;
- -moz-text-size-adjust: 100%;
- -ms-text-size-adjust: 100%;
- -webkit-text-size-adjust: 100%;
- text-size-adjust: 100%;
-
- font: normal 100%/1.3 "Noto Sans", sans-serif;
+  box-sizing: border-box;
+  font: normal 100%/1.5 sans-serif;
+  font-family: "Lato", sans-serif;
+  background-color: #e2e2e2;
+  vertical-align: middle;
+  text-align: center;
 }
 
 *, *::before, *::after {
- box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
- margin: 0;
- overflow: hidden;
+  padding-top: 1em;
+  margin: 0;
 }
 
-section {
- background-color: #e5c30a;
+div {
+  display: inline-block;
+  max-width: 25em;
+  padding: 1em;
 }
 
-.img-flex {
- background-color: #e5c30a;
- display: block;
- width: 100%;
- min-height: 11rem;
+img {
+  width: 100%;
+  display: block;
 }
 
-.section-letter {
- float: left;
- text-align: center;
- padding-left: 1.5rem;
+p {
+  text-align: left;
 }
 
-.section-icon {
- float: right;
- text-align: center;
- padding-right: 1.5rem;
+.btn {
+  color: #333;
+  border: 3px solid #000;
+  border-radius: .5em;
+  padding: .5em;
+  display: inline-block;
 }
 
-section h2 {
- margin: 0;
- font-size: 1.5rem;
+.btn-ghost {
+  color: #333;
+  border: 3px solid #000;
+  border-radius: .5em;
+  padding: .5em;
+  display: inline-block;
 }
 
-section div img {
- width: 8.5rem;
- margin: 0;
- display: block;
-}
-
-.wrapper {
- max-width: 45em;
- margin: 0 auto;
- padding-top: 1.5rem;
-}
-
-.section-body {
- padding: 0 1.5rem 1.5rem 1.5rem;
-}
-
-section p {
- margin: 0;
-}
-
-@media only screen and (min-width: 25em) {
-
- section p, h2 {
-   font-size: 100%;
-   line-height: 1.3;
- }
-
-}
-
-@media only screen and (min-width: 38em) {
-
- section p, h2 {
-   font-size: 110%;
-   line-height: 1.4;
- }
-
-}
-
-@media only screen and (min-width: 60em) {
-
- section p, h2 {
-   font-size: 120%;
-   line-height: 1.5;
- }
-
-}
-
-@media only screen and (min-width: 90em) {
-
- section p, h2 {
-   font-size: 130%;
-   line-height: 1.5;
- }
-
+.btn-ghost:hover {
+  color: #fff;
+  background-color: #666;
+  border-color: #666;
 }
